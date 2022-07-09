@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: linear-gradient(90deg, #3a91d7,60%,#9959b5);
+        }
+        #main{
+           height: 570px;
+           width: 28%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           background-color: white; 
+           border-radius: 10px;
+           margin: 40px auto;
+        }
+        h1{
+            margin-top: 80px;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 80%;
+            height: 40%;
+            background-color: white;
+            margin-top: 55px;
+        }
+        hr{
+            height: 2px;
+            background-color: rgb(177, 177, 177);
+            margin-top: 5px ;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+            border: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        input:nth-child(3){
+            margin-top: 50px;
+        }
+        input:last-child{
+            width: 100%;
+            height: 55px;
+            margin-top: 30px;
+            background: linear-gradient(45deg, #3a91d7,#9959b5);
+            color: white;
+            cursor: pointer;
+        }
+        P{
+            margin-top: 20px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main>p:nth-child(3){
+            margin-top: 60px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Login</h1>
+        <form>
+            <input type="mail" placeholder="Email" required="required"/>
+            <hr/>
+            <input type="password" placeholder="Password" required="required"/>
+            <hr/>
+            <input type="submit" value="Login"/>
+        </form>
+        <p>Forgot <a href="loginPage.html">Password?</a></p>
+        <p>Don't have an account? <a href="loginPage.html">Sign up</a></p>
+    </div>
+</body>
+</html>
